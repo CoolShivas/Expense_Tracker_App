@@ -1,9 +1,30 @@
-const ExpenseItems = () => {
+import ExpenseItem from "./ExpenseItem";
+
+const ExpenseItems = (props) => {
     return (
         <div>
-            <p> Food Rs 10. </p>
-            <p> Petrol Rs 100. </p>
-            <p> Movie Rs 200. </p>
+            <ExpenseItem
+                nameABC={props.expensesABC[0].title}
+                amountABC={props.expensesABC[0].amount}
+                dateABC={props.expensesABC[0].date}
+            ></ExpenseItem>
+            <ExpenseItem
+                nameABC={props.expensesABC[1].title}
+                amountABC={props.expensesABC[1].amount}
+                dateABC={props.expensesABC[1].date}
+            ></ExpenseItem>
+            <ExpenseItem
+                nameABC={props.expensesABC[2].title}
+                amountABC={props.expensesABC[2].amount}
+                dateABC={props.expensesABC[2].date}
+            ></ExpenseItem>
+            <ExpenseItem
+                nameABC={props.expensesABC[3].title}
+                amountABC={props.expensesABC[3].amount}
+                dateABC={props.expensesABC[3].date}
+            ></ExpenseItem>
+
+
         </div>
     )
 }

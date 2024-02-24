@@ -1,9 +1,7 @@
 import styles from "./ExpenseItem.module.css";
 
 const ExpenseItem = (props) => {
-    // const expenseDate = new Date(2024, 2, 12);
-    // const expenseTitle = "Car Insurance";
-    // const expenseAmount = 294;
+
     return (
         <div className={styles.expense_item}>
             <div> {props.dateABC.toISOString()}
