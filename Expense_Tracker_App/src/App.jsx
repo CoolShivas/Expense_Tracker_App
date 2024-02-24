@@ -1,5 +1,6 @@
-import ExpenseItem from "./components/ExpenseItem";
+
 import ExpenseItems from "./components/ExpenseItems";
+
 
 function App() {
 
@@ -14,26 +15,26 @@ function App() {
       id: "e2",
       title: "Bike Insurance",
       amount: 194.12,
-      date: new Date(2020, 7, 14),
+      date: new Date(2021, 1, 28),
     },
     {
       id: "e3",
       title: "Car Insurance",
       amount: 2594.12,
-      date: new Date(2020, 7, 14),
+      date: new Date(2022, 5, 1),
     },
     {
       id: "e4",
       title: "Dumper Insurance",
       amount: 1294.12,
-      date: new Date(2020, 7, 14),
+      date: new Date(2023, 9, 21),
     },
   ];
 
   return (
     <div>
-      <h1> Let's get started. </h1>
 
+      <h1> Expense Tracker App. </h1>
       <ExpenseItems expensesABC={expenses}></ExpenseItems>
     </div>
   )
