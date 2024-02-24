@@ -1,6 +1,5 @@
-
 import ExpenseItems from "./components/ExpenseItems";
-
+import AppName from "./components/AppName";
 
 function App() {
 
@@ -33,8 +32,7 @@ function App() {
 
   return (
     <div>
-
-      <h1> Expense Tracker App. </h1>
+      <AppName></AppName>
       <ExpenseItems expensesABC={expenses}></ExpenseItems>
     </div>
   )
