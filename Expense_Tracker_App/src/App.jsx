@@ -1,5 +1,6 @@
 import ExpenseItems from "./components/ExpenseItems";
 import AppName from "./components/AppName";
+import Card from "./UI/Card";
 
 function App() {
 
@@ -31,10 +32,10 @@ function App() {
   ];
 
   return (
-    <div>
+    <Card>
       <AppName></AppName>
       <ExpenseItems expensesABC={expenses}></ExpenseItems>
-    </div>
+    </Card>
   )
 }
 

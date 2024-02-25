@@ -1,3 +1,4 @@
+
 import styles from "./ExpenseItem.module.css";
 import ExpenseDate from "./ExpenseDate";
 import ExpenseDetails from "./ExpenseDetails";
@@ -20,7 +21,8 @@ const ExpenseItem = (props) => {
                 {/* <h2> {props.nameABC} </h2> */}
 
                 <ExpenseDetails
-                    nameXYZ={props.nameABC}></ExpenseDetails>
+                    nameXYZ={props.nameABC}
+                ></ExpenseDetails>
             </div>
 
             <div

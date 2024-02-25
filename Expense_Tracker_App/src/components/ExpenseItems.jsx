@@ -2,7 +2,7 @@ import ExpenseItem from "./ExpenseItem";
 
 const ExpenseItems = ({ expensesABC }) => {
     return (
-        <div>
+        <>
             {expensesABC.map((arr) => {
                 return <ExpenseItem
                     nameABC={arr.title}
@@ -11,7 +11,7 @@ const ExpenseItems = ({ expensesABC }) => {
                     key={arr.title}
                 ></ExpenseItem>
             })}
-        </div>
+        </>
     )
 }
 
