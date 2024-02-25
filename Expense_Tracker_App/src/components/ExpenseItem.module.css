@@ -19,6 +19,9 @@
     flex: 1;
 
     color: white;
+    font-size: 28px;
+    margin-left: 10px;
+
 }
 
 .expense_item h2 {

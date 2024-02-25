@@ -28,8 +28,6 @@ const ExpenseItem = (props) => {
 
             <div>
 
-                <button> Add </button>
-
                 <button onClick={() => { props.handleOnDeleteXYZ(props.titleABC) }}> Delete </button>
 
             </div>
