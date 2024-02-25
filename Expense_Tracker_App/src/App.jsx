@@ -1,6 +1,8 @@
 import ExpenseItems from "./components/ExpenseItems";
 import AppName from "./components/AppName";
 import Card from "./UI/Card";
+import { useState } from "react";
+
 
 function App() {
 
@@ -31,10 +33,22 @@ function App() {
     },
   ];
 
+  const [valExpenses, setExpenses] = useState(expenses);
+
+  const handleOnDelete = (titleName) => {
+    console.log(`${titleName}`);
+    const delBtn = valExpenses.filter(arr => arr.title !== titleName)
+    setExpenses(delBtn);
+  }
+
   return (
     <Card>
       <AppName></AppName>
-      <ExpenseItems expensesABC={expenses}></ExpenseItems>
+      <ExpenseItems
+        // expensesABC={expenses}
+        expensesABC={valExpenses}
+        handleOnDeleteABC={handleOnDelete}
+      ></ExpenseItems>
     </Card>
   )
 }

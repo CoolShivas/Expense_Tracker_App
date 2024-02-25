@@ -1,38 +1,36 @@
-
 import styles from "./ExpenseItem.module.css";
 import ExpenseDate from "./ExpenseDate";
-import ExpenseDetails from "./ExpenseDetails";
+// import ExpenseDetails from "./ExpenseDetails";
+
 
 
 const ExpenseItem = (props) => {
 
     return (
         <div className={styles.expense_item}>
-
-            {/* <div> {props.dateABC.toISOString()} </div> */}
-
             <ExpenseDate
                 dateXYZ={props.dateABC}
             ></ExpenseDate>
-
             <div
                 className={styles.expense_item__description}>
-
-                {/* <h2> {props.nameABC} </h2> */}
-
-                <ExpenseDetails
+                {/* <ExpenseDetails
                     nameXYZ={props.nameABC}
-                ></ExpenseDetails>
+                ></ExpenseDetails> */}
+                {props.titleABC}
             </div>
-
             <div
                 className={styles.expense_item__price}>
-
-                {/* ₹ {props.amountABC} */}
-
-                <ExpenseDetails
+                {/* <ExpenseDetails
                     amountXYZ={props.amountABC}
-                ></ExpenseDetails>
+                ></ExpenseDetails> */}
+                ₹ {props.amountABC}
+            </div>
+
+            <div>
+
+                <button> Add </button>
+
+                <button onClick={() => { props.handleOnDeleteXYZ(props.titleABC) }}> Delete </button>
 
             </div>
         </div>
